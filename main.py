@@ -3,18 +3,10 @@
 import pygame
 import time
  
-# this will be a conflict
-# big conflict
-#  
 # initializing pygame
- 
 pygame.init()
- 
+
 # defining variables
- 
-# I like eggs
- # NO U
-#FU 
 clock = pygame.time.Clock()
 ver = "Beta 0.1.6.3"
 autog = 0
@@ -30,12 +22,10 @@ grey = (128, 128, 128)
 blue = (0, 100, 250)
  
 # creating display and caption
- 
 gameDisplay = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption("clicky clicks")
  
 # defining functions
- 
 def circle(display, color, x, y, radius):
     pygame.draw.circle(display, color, [x, y], radius)
  
@@ -62,9 +52,9 @@ def main_loop():
     global clock
     global autog
     global ver
-    global color1
-    global color2
-    global color3
+    global green
+    global silver
+    global white
     mong = 1
     cost = 50
     cost2 = 50
@@ -106,7 +96,6 @@ def main_loop():
  
  
         # drawing stuff
- 
         gameDisplay.fill(light_blue)
         DrawText("Clicky Clicks", black, light_blue, 400, 100, 50)
         DrawText("you have " + str(f'{coins:.2f}') + " coins", black, light_blue, 100, 50, 20)
@@ -120,7 +109,6 @@ def main_loop():
         clock.tick(60)
  
 # ending the program
- 
 main_loop()
 pygame.quit()
 quit()
